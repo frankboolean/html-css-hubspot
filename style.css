@@ -11,6 +11,7 @@ nav::after{
   clear: both;
 }
 nav{
+
   height: 85px;
   background-color: whitesmoke;
   border: 1px solid black;
@@ -76,6 +77,7 @@ header::after{
 section{
   background-image: url(img/jumbotron.png);
   height: 800px;
+  background-repeat: no-repeat;
 }
 
 .rosa{
@@ -105,4 +107,52 @@ section{
 .rosa h3{
   margin-left: 30px;
   margin-top: 20px;
+}
+/* parte giocattolo */
+main{
+  height: 2000px;
+}
+
+.cubo img{
+  width: 200px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+.cubo h1,h2{
+  text-align: center;
+}
+/* freeee hub */
+.freehub{
+  height: 300px;
+  width: 900px;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 120px;
+}
+.freehub img{
+  width: 200px;
+  margin-left: 40px;
+  margin-top: 40px;
+
+}
+.bottone{
+
+padding: 30px;
+  color: white;
+  width: 30;
+}
+.freehub button{
+  margin-left: 60px;
+  padding: 15px;
+  background-color: orange;
+  color: white;
+  margin-top: 80px;
+}
+.crm{
+  float: right;
+  width: 35%;
+  margin-bottom: 100px;
 }
