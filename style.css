@@ -17,8 +17,10 @@ footer::after{
 
 }
 
+
+
 footer{
-  background-color: darkblue;
+  background-color: #33475b;
 }
 .clearfix::after {
   content:"" ;
@@ -62,6 +64,13 @@ nav{
   border :1px solid black;
 
 }
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+right: 0;
+}
 .links{
   float: left;
   margin-top: 20px;
@@ -82,8 +91,13 @@ nav{
   margin-right: 30px;
 
 }
-
-.linkd button{
+.ciao{
+  background-color: orange;
+  color: white;
+  padding: 20px;
+  margin-left: 40px;
+}
+.ciao1{
   color: orange;
   padding: 20px;
   margin-left: 40px;
@@ -173,7 +187,7 @@ margin-right: auto;
 .freehub{
 
   width: 1084px;
-  border: 1px solid black;
+
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -370,10 +384,15 @@ display: inline-block;
 /* fine colonne */
 /* inizio parte blu */
 
-.titolosezione h1,p{
+.titolosezione h1{
   color: white;
 text-align: center;
 
+}
+.titolosezione p{
+  text-align: center;
+  color: white;
+  margin-top: 20px;
 }
 .wrapper{
 margin: 10%;
@@ -393,46 +412,62 @@ margin: 10%;
 }
 
 /* dati */
-  .dato{
+.dati::after{ content:"";
+display: table;
+clear: both;
+  }
+.dato{
+    float: left;
+    margin-left: 10%;
 
-    width: 30%;
-    margin-top: 40px;
-    margin-left: 40px;
   }
   .dato h1{
     font-style: italic;
+    margin-left: 80px;
+    margin: 20px;
   }
 
 .dato2{
-  margin: 90px;
+  float: right;
+  width: 30%;
+  padding: 10px;
+  margin: 10px;
+}
+.dato2 img{
+  width: 30%;
+  margin: 10px;
+}
+/* dati sotoo */
 
+.datisotto::after{
+  content:"";
+  display: table;
+  clear: both;
 }
-.dato2 h2{
+.datisotto{
   margin: 20px;
 }
-.dato h2{
+.datisotto h1{
   margin: 20px;
 }
-.dato2 button{
-  color: white;
-  background-color: orange;
-  border: none;
-  font-size: 20px;
-  margin-top: 20px;
-  margin-left: 30px;
+.start{
+  float: left;
+  margin-top: 150px;
+}
+.start button{
+  margin-left: 180px;
   padding: 20px;
-}
-.nero img{
-width: 50%;
+  background-color: orange;
+  color: white;
+  margin-top: 30px;
 }
 .nero{
-float: right;
-display: inline-block;
+  float: right;
+  width: 30%;
 
 }
-.dati{
-  float: left;
-  width: 50%;
+.nero img{
+  width: 60%;
 }
 
 /* footer */
@@ -443,8 +478,13 @@ display: inline-block;
   font-size: 140%;
   margin: 40px;
   color: lightblue;
+  font-size: 20px;
 
 }
+.miao{
+  color: white;
+}
+
 .canali ul{
     list-style-type: none;
 }
@@ -454,7 +494,7 @@ display: inline-block;
 }
 
 .canali button{
-  color: blue;
+  color: lightblue;
   background-color: white;
   border: none;
   font-size: 20px;
@@ -473,8 +513,23 @@ font-size: 140%;
 margin-left: 200px;
 text-decoration: none;
 }
-.finale{
+.finale::after{
+  content:"";
+  display: table;
+  clear: both;
+}
+.logofinale{
   float: left;
-  margin: 40px;
-  width: 40%;
+  margin-top: 40px;
+}
+.finito{
+  float: right;
+  margin-top: 40px;
+
+}
+.finito a{
+  text-decoration: none;
+  font-size: 20px;
+  margin: 20px;
+  color: lightblue;
 }
